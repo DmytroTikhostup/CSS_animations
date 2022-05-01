@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(228, 150, 48);
+}
+button {
+    border: 0;
+    outline: 0;
+    padding: 16px 32px 16px 32px;
+    background: rgb(243, 244, 240);
+    border-radius: 25px;
+    cursor: pointer;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+/* task 1 - rotation square */
+
+.animation_block {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+
+.task_1_block {
+    background-color: rgb(47, 70, 241);
+    width: 400px;
+    height: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Impact, Haettenschweiler,
+        'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    text-shadow: 5px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* task 2.1 - 2.2 - two buttons, change color */
+
+.task_2_block {
+    background-color: rgb(164, 142, 242);
+
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribeNow_button {
+    background-color: blueviolet;
+    color: rgb(254, 253, 253);
+    font-size: 16px;
+    border-radius: 10px;
+    transform: translate(0, 0);
+    transition: all 0.5s linear;
+}
+
+.subscribeNow_button:hover {
+    background-color: blueviolet;
+    color: rgb(254, 253, 253);
+    border-radius: 10px;
+    transform: translate(0, 10px);
+    box-shadow: 0px 22px 5px -10px rgba(34, 60, 80, 0.25);
+}
+
+.learnMore_button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 253, 253);
+    border-radius: 25px;
+    width: auto;
+    font-size: 18px;
+    transition: all 0.5s linear;
+}
+
+.learnMore_button:hover {
+    background-color: rgb(36, 193, 55);
+    color: rgb(254, 253, 253);
+    border-radius: 25px;
+    width: auto;
+    transition-duration: 0.5s;
+}
+
+/* task 2.3 - four buttons, change color */
+
+.task_3_block {
+    background-color: rgb(246, 82, 243);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alfa_button {
+    background-color: rgb(33, 212, 253);
+    color: rgb(179, 42, 253);
+    transition: all 0.2s linear;
+}
+
+.alfa_button:hover {
+    background-color: rgb(179, 42, 253);
+    color: rgb(33, 212, 253);
+    transition: all 0.2s linear;
+}
+
+.beta_button {
+    background-color: rgb(8, 174, 234);
+    color: rgb(42, 244, 153);
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+
+.beta_button:hover {
+    background-color: rgb(42, 244, 153);
+    color: rgb(8, 174, 234);
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+
+.gamma_button {
+    background-color: rgb(253, 225, 64);
+    color: rgb(249, 119, 146);
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+
+.gamma_button:hover {
+    background-color: rgb(249, 119, 146);
+    color: rgb(253, 225, 64);
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+
+.delta_button {
+    background-color: rgb(62, 236, 172);
+    color: rgb(234, 127, 214);
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+
+.delta_button:hover {
+    background-color: rgb(234, 127, 214);
+    color: rgb(62, 236, 172);
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
