@@ -247,6 +247,7 @@ button {
     text-align: center;
     transform: scale(1, 1);
     transition: all 2s ease-in;
+    transform-origin: bottom;
 }
 .eq:hover {
     width: 60px;
